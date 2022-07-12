@@ -1,0 +1,99 @@
+
+body {
+    background-color: antiquewhite;
+}
+.container {
+    border: 2px solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    max-width: 700px;
+    min-width: 500px;
+    margin: auto; 
+    background-color:aliceblue;
+}
+.top {
+    text-align: center;
+    border: 1px solid;
+    margin: 1%;
+    border-top: 20px solid orange;
+    color: white;
+    background-color: #1b1b32;
+}
+.logo img {
+    width: 100%;
+   
+}
+.top h1{
+    font-size: 50px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.top p{
+    margin-top: -3%;
+    font-size: 15px;
+    opacity: 0.5;
+}
+.top hr {
+    width: 90%;
+    height: 1px;
+    
+}
+.module-one {
+    border: 1px solid;
+    border-top: 10px solid orange;
+    margin: 1%;
+    padding: 10px;
+    color: white;
+    background-color: #1b1b32;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.module-one .labels {
+    display: block;
+    font-size: 20px;
+   padding-bottom: 10px;
+   padding-top: 10px;
+}
+.module-one .textFill input {
+    width: 500px;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 5px;
+}
+.module-one .choose{
+    display: block;
+    margin-left: 15px;
+}
+.module-two {
+    border: 1px solid;
+    border-top:10px solid orange;
+    margin: 1%;
+    padding: 10px;
+    color: white;
+    background-color: #1b1b32;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+.module-two .labels {
+    display: block;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.module-two .choose {
+    display: block;
+    margin-left: 15px;
+}
+.module-two .textFill input{
+    width: 500px;
+    height: 25px;
+}
+.module-three input {
+    padding: 10px 0px 10px 0px;
+    background-color: orange;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+}

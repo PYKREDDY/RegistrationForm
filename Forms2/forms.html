@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="forms.css">
 </head>
 <body>
+    <form action="" method="POST">
     <div class="container">
         <div class="top">
             <h1>Registration Form for SAC</h1>
@@ -19,19 +20,19 @@
         </div>
         <div class="module-one">
            <div class="labels"><label for="">Name of the Student</label></div>
-           <div class="inp textFill"><input type="text" placeholder="Enter Your Full Name"></div>
+           <div class="inp textFill"><input type="text" placeholder="Enter Your Full Name" required name=""></div>
            <div class="labels"><label for="">ID Number of the Student</label></div>
-           <div class="inp textFill"><input type="text" name="IDnum" id="" pattern="[0-9]{10,}"></div>
+           <div class="inp textFill"><input type="text" name="IDnum" id="" pattern="[0-9]{10,}" required></div>
            <div class="labels"><label for="">Email ID</label></div>
-           <div class="inp textFill"><input type="email" name="email" id="" placeholder="12345@kluniversity.in"></div>
+           <div class="inp textFill"><input type="email" name="email" id="" placeholder="12345@kluniversity.in" required></div>
            <div class="labels"><label for="">Mobile Number</label></div>
-           <div class="inp textFill"><input type="tel" name="mobile" id=""></div>
+           <div class="inp textFill"><input type="tel" name="mobile" id="" required></div>
            <div class="labels"><label for="">Gender</label></div>
-           <div class="inp choose"><input type="radio" name="gender" id="">Male</div>
-           <div class="inp choose"><input type="radio" name="gender" id="">Female</div>
-           <div class="inp choose"><input type="radio" name="gender" id="">Prefer not to say</div>
+           <div class="inp choose"><input type="radio" name="gender" id="" required>Male</div>
+           <div class="inp choose"><input type="radio" name="gender" id="" required>Female</div>
+           <div class="inp choose"><input type="radio" name="gender" id="" required>Prefer not to say</div>
             <div class="labels"><label for="">Hostler/Day Scholar?</label></div>
-            <div class="inp choose"><input type="radio" name="H/D" id="">Hostel</div> 
+            <div class="inp choose"><input type="radio" name="H/D" id="" required>Hostel</div> 
             <div class="inp choose"><input type="radio" name="H/D" id="">Day Scholar</div>
             </div>
 
@@ -39,7 +40,7 @@
             <div class="module-two">
                 <div class="labels"><label for="">Branch</label></div>
                 <div class="inp">
-                    <select name="" id="">
+                    <select name="branch" id="" >
                         <option value="none" selected>Choose</option>
                         <option value="CSE">CSE</option>
                         <option value="AI&DS">AI&DS</option>
@@ -65,7 +66,7 @@
                 </div>
                 <div class="labels"><label for="">Year of Pursuing</label></div>
                 <div class="inp">
-                    <select name="" id="">
+                    <select name="year" id="">
                         <option value="none" selected>Choose</option>
                         <option value="one">One</option>
                         <option value="two">Two</option>
@@ -92,15 +93,16 @@
                 <div class="inp choose"><input type="radio" name="PR" id="">Yes</div>
                 <div class="inp choose"><input type="radio" name="PR" id="">No</div>
                 <div class="labels"><label for="">What is your field of interest?</label></div>
-                <div class="inp textFill"><input type="text" name="" id="" placeholder="Game Streaming, Cooking, Programming, etc."></div>
+                <div class="inp textFill"><input type="text" name="" id="interest" placeholder="Game Streaming, Cooking, Programming, etc."></div>
                 <div class="labels"><label for="">What is your field of expertise?</label></div>
-                <div class="inp textFill"><input type="text" name="" id=""></div>
+                <div class="inp textFill"><input type="text" name="expertise" id=""></div>
             </div>
             <div class="module-three">
                 <input type="submit" name="submit" value="Click Here to Submit" id="">
+                <p>This form this built by SAC Students.We Learn by Doing</p>
             </div>
         </div>
-        
     </div>
+</form>
 </body>
 </html>

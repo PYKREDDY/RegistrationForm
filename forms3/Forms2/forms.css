@@ -30,6 +30,7 @@ body {
 .top h1{
     font-size: 50px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: whitesmoke;
 }
 .top p{
     margin-top: -3%;
@@ -67,11 +68,12 @@ body {
     max-width: 600px;
     border: none;
     padding: 5px;
-    background-color: rgb(56, 56, 77, 0.8);
+    background-color: rgba(200, 196, 186, 0.2); 
     border-bottom: 2px solid orange;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: white;
 }
+
 .module-one .choose{
     display: block;
     margin-left: 15px;
@@ -80,22 +82,27 @@ body {
 .module-two {
         border: 1px solid;
         border-top: 10px solid rgba(255, 165, 0, 0.9);
-        margin: 1%;
+        margin: 1%; 
         padding: 10px;
         color: white;
         background-color: #1b1b32;
         padding-bottom: 30px;
         padding-right: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .module-two .labels {
     display: block;
     font-size: 20px;
     padding-bottom: 5px;
     padding-top: 15px;
+    
 
 }
-.module-two .branches select {
+.module-two select {
     width: 60%;
+    border: 2px solid orange;
+    height: 30px;
+    border-radius: 10px;
 }
 .module-two .choose {
     display: block;
@@ -114,7 +121,7 @@ body {
     max-width: 600px;
     border: none;
     padding: 5px;
-    background-color: rgb(56, 56, 77, 0.8);
+    background-color: rgba(148, 154, 129, 0.3);
     border-bottom: 2px solid orange;
     font-family:Georgia, 'Times New Roman', Times, serif;
     color: whitesmoke;

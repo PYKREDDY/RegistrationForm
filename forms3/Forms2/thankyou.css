@@ -1,0 +1,7 @@
+.pack {
+    border: 2px solid;
+    margin: auto;
+    max-width: 700px;
+    text-align: center;
+    background-color: orange;
+}

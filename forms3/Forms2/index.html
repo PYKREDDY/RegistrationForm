@@ -26,23 +26,23 @@
            <div class="inp textFill"><input type="text" placeholder="Enter Your Full Name" required name="data[Name]"></div>
            <div class="labels"><label for="">ID Number of the Student</label></div>
            <div class="inp textFill"><input type="text" name="data[ID]" id="" pattern="[0-9]{10,}" required placeholder="Registration Number"></div>
-           <div class="labels"><label for="">Email ID</label></div>
-           <div class="inp textFill"><input type="email" name="data[Email]" id="" placeholder="12345@kluniversity.in" required></div>
+           <div class="labels"><label for="">Registered Email ID</label></div>
+           <div class="inp textFill"><input type="email" name="data[Email]" id="" placeholder="2100099999@kluniversity.in" required></div>
            <div class="labels"><label for="">Mobile Number</label></div>
            <div class="inp textFill"><input type="tel" name="data[Mobile]" id="" required placeholder="Preferably Whatsapp number"></div>
            <div class="labels"><label for="">Gender</label></div>
-           <div class="inp choose"><input type="radio" name="data[Gender]" id=""  value="male"> Male</div>
-           <div class="inp choose"><input type="radio" name="data[Gender]" id="" value="femlae"> Female</div>
+           <div class="inp choose"><input type="radio" name="data[Gender]" id=""  value="male" required> Male</div>
+           <div class="inp choose"><input type="radio" name="data[Gender]" id="" value="femlae" required> Female</div>
             <div class="labels"><label for="">Residing in Campus Hostel/Day Scholars?</label></div>
             <div class="inp choose"><input type="radio" name="data[H/D]" id="" required value="Hostel"> Hostel</div> 
-            <div class="inp choose" val><input type="radio" name="data[H/D]" id="" value="Day Scholar"> Day Scholar</div>
+            <div class="inp choose" val><input type="radio" name="data[H/D]" id="" value="Day Scholar" required> Day Scholar</div>
             </div>
 
 
             <div class="module-two">
                 <div class="labels"><label for="">Branch</label></div>
                 <div class="inp choose">
-                        <select name="data[Branch]" id="">
+                        <select name="data[Branch]" id="" required>
                             <option value="none">Choose</option>
                             <option value="B.Tech  -Computer Science  and Engineering">B.Tech  -Computer Science  and Engineering</option>
                             <option value="B.Tech   -Electronics and Communication Engineering">B.Tech   -Electronics and Communication Engineering</option>
@@ -108,7 +108,7 @@
                 </div>
                 <div class="labels"><label for="">Year of Pursuing</label></div>
                 <div class="inp year">
-                    <select name="data[Year]" id="">
+                    <select name="data[Year]" id="" required>
                         <option type="none" selected>Choose</option>
                         <option type="one" value="1">1</option>
                         <option type="two" value="2">2</option>
@@ -146,8 +146,8 @@
                 <div class="inp choose"><input type="radio" name="data[PR]" id="" value="yes"> Yes</div>
                 <div class="inp choose"><input type="radio" name="data[PR]" id="" value="no" > No</div>
                 <div class="labels"><label for="">Would you like join Rural Women Empowerment?</label></div>
-                <div class="inp choose"><input type="radio" name="data[PR]" id="" value="yes"> Yes</div>
-                <div class="inp choose"><input type="radio" name="data[PR]" id="" value="no" > No</div>
+                <div class="inp choose"><input type="radio" name="data[WomenEmpowerment]" id="" value="yes"> Yes</div>
+                <div class="inp choose"><input type="radio" name="data[WomenEmpowerment]" id="" value="no" > No</div>
                 <div class="labels"><label for="">Would like to join SAC Leadership?</label></div>
                 <div class="inp choose">
                     <div class="inp"><input type="radio" name="data[Leadership]" id="" value="Head / President"> Head / President</div>
@@ -193,10 +193,29 @@
                 <div class="inp choose"><input type="radio" name="data[Sports Club]" id="" value="E-sports"> E-sports <br></div>
                 <br> 
                 <div class="termsandconditions">
-                    <input type="checkbox" name="" id="terms"><span><p> I Agree to <a href="tandc.html">terms and conditions</a> of KLUSAC</p></span>
+                    <input type="checkbox" name="" id="terms" required><span><p> I Agree to <a href="tandc.html">terms and conditions</a> of KLUSAC</p></span>
                 </div>
                
             </div>
+            <div class="hero">
+                <button id="btn">
+                    <p id="btntext">Submit</p> 
+                    <div class="checkbox">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+                         </svg>
+                    </div>
+                </button>
+            </div>
+            <script>
+                var btn = document.getElementById("btn");
+                var btntext = document.getElementById("btntext"); 
+                btn.onclick = function() {
+                    btntext.innerHTML = "Thanks"; 
+                    btn.classList.add("active"); 
+                    
+                }
+            </script>
             <div class="module-three">
                 <input type="submit" name="data[submit]" type="Click Here to Submit" id="">
             </div>

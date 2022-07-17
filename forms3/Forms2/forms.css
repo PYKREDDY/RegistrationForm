@@ -144,63 +144,58 @@ body {
 .termsandconditions p {
     display: inline;
 }
-
-.hero {
-    width: 100%;
-    background-color: aliceblue;
-    text-align: center;
+.buto {
+    background-color: transparent;
+    width: 99%;
+    height: 60px;
+    border: none;
 }
-button {
-    width: 98%;
-    height: 90px;
-    border: 2px solid;
-    outline: none;
-    color: #fff;
-    font-size: 30px;
-    border-radius: 40px;
+.module-three .button {
+    display: inline-flex; 
+    align-items: center;
+    margin-left: 1%;
+    padding: px;
     background-color: orange;
-    box-shadow: 0 6px 20px -5px rgba(13, 0, 0, 0.4);
-    position: relative;
-    overflow: hidden;
+    width: 98%;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    user-select: none;
 }
-.checkbox {
-    width: 100px;
-    height: 100px;
-    border-radius: 40px;
-    box-shadow: 0 0 12px -12px rgba(27, 26, 26, 0.4);
+.module-three .button .icon {
+    font-size: 30px;
+    color: white;
+    margin-right: 0;
+    display: none;
     position: absolute;
-    top: 0;
-    right: -40px;
-    opacity: 0.9;
+    margin-left: 17%;
+    
 }
-.checkbox svg {
-    width: 40px;
-    margin: 20px;
+.button.checked .icon{
+    display: flex;
 }
-svg path {
-    stroke-width: 5;
-    stroke: #fff;
-    stroke-dasharray: 34;
-    stroke-dashoffset: 34;
-    stroke-linecap: round;
+.icon.spinner.spin{
+    animation: spin 1.3s ease-in-out infinite;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.module-three .icon.check {
+    display: inline-flex;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    font-size: 18px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(225, 218, 206, 0.477);
+    
 
 }
-.active {
-    background: orange;
-    transform: 1s;
-}
-.active .checkbox {
-    right: 0;
-    opacity: 1;
-    transition: 1s;
-}
-.active p {
-    margin-right: 50px;
-    transition: 1s;
-}
-.active svg path {
-    stroke-dashoffset: 0;
-    transition: 1s;
-    transition-delay: 1s;
+.button .text-button {
+    font-size: 30px;
+    font-weight: 300px;
+    color: white;
 }

@@ -7,6 +7,7 @@
     <title>Registration Form</title>
     <link rel="icon" type="image/x-icon" href="SAC.png">
     <link rel="stylesheet" href="forms.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     
 </head>
 <body>
@@ -195,11 +196,33 @@
                 <div class="termsandconditions">
                     <input type="checkbox" name="" id="terms" required><span><p> I Agree to <a href="tandc.html">terms and conditions</a> of KLUSAC</p></span>
                 </div>
-               <div class="module-three">
-                
-               </div>
-            
         </div>
+        <div class="module-three">
+            <div class="button">
+                <i class="fa-solid fa-circle-notch icon spinner"></i>
+               <!-- <i class="fa-solid fa-check icon check"></i>-->
+                <button class="buto"><span class="text-button">Submit</span></button>
+            </div>
+            <script>
+                let btn = document.querySelector(".button"),
+                    spinIcon = document.querySelector(".spinner"),
+                    btnText = document.querySelector(".text-button");
+
+                    btn.addEventListener("click", () => {
+                        btn.style.cursor = "wait"; 
+                        btn.classList.add("checked");
+                        spinIcon.classList.add("spin");
+                        btnText.textContent = "Loading";
+
+                    setTimeout(() =>{
+                        btn.style.pointerEvents = "none"; 
+                        spinIcon.classList.replace("spinner","check" ); 
+                        spinIcon.classList.replace("fa-circle-notch","fa-check" ); 
+                        btnText.textContent = "Done";
+                    },3000)
+                    })
+            </script>
+   </div>
     </div>
 </form>
 <script>

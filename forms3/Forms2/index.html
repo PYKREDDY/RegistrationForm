@@ -24,11 +24,11 @@
         </div>
         <div class="module-one">
            <div class="labels"><label for="">Name of the Student</label></div>
-           <div class="inp textFill"><input type="text" placeholder="Enter Your Full Name" required name="data[Name]"></div>
+           <div class="inp textFill"><input type="text" placeholder="Enter Your Full Name" required name="data[Name]" id="Name"></div>
            <div class="labels"><label for="">ID Number of the Student</label></div>
-           <div class="inp textFill"><input type="text" name="data[ID]" id="" pattern="[0-9]{10,}" required placeholder="Registration Number"></div>
+           <div class="inp textFill"><input type="text" name="data[ID]" id="ID" pattern="[0-9]{10,}" required placeholder="Registration Number"></div>
            <div class="labels"><label for="">Registered Email ID</label></div>
-           <div class="inp textFill"><input type="email" name="data[Email]" id="" placeholder="2100099999@kluniversity.in" required></div>
+           <div class="inp textFill"><input type="email" name="data[Email]" id="Email" placeholder="2100099999@kluniversity.in" required></div>
            <div class="labels"><label for="">Mobile Number</label></div>
            <div class="inp textFill"><input type="tel" name="data[Mobile]" id="" required placeholder="Preferably Whatsapp number"></div>
            <div class="labels"><label for="">Gender</label></div>
@@ -225,6 +225,7 @@
    </div>
     </div>
 </form>
+x
 <script>
     var form = document.getElementById('sheetdb-form');
     form.addEventListener("submit", e => {
@@ -239,5 +240,10 @@
       });
     });
   </script>
+
+  <form action="mailto:deepakreddygathpa@gmail.com" method="POST" enctype="multipart/form-data" name="EmailForm">
+    thankyou for registering into SAC, you shortly be receiving an email regarding the plan of action. 
+
+  </form>
 </body>
 </html>

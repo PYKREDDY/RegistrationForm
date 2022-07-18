@@ -130,7 +130,7 @@ body {
     width: 60%;
     
 }
-.module-two .termsandconditions a{
+/*.module-two .termsandconditions a{
     color: orange;
 }
 .module-three {
@@ -143,6 +143,10 @@ body {
 }
 .termsandconditions p {
     display: inline;
+}
+*/
+.module-three {
+    margin-bottom: 7px;
 }
 .buto {
     background-color: transparent;
